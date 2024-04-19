@@ -218,11 +218,10 @@
 }
 
 .container_nosotros {
-  margin: 1rem;
-}
-
-.paddingTitle-nosotros {
-  padding-top: 10px;
+  padding: 10px;
+  margin: 20px 0px;
+  background-color: var(--colorPrimario3);
+  width: 100%;
 }
 
 .nosotros {
@@ -369,7 +368,9 @@ backdrop-filter: blur(5px);
 
 /*    servicios   */
 .servicios {
-  margin: 10px;
+  margin: 20px 0px;
+  padding: 10px;
+  background-color: var(--colorPrimario3);
 }
 
 .servicios_title {
@@ -395,7 +396,7 @@ backdrop-filter: blur(5px);
 
 
 .servicos_container {
-  background-color: var(--colorPrimario3);
+  background-color: var(--colorPrimario2);
   border-radius: 8px;
   padding: 10px;
 }
