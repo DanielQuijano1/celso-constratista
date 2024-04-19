@@ -28,8 +28,8 @@ function Footer() {
                 <h3 className='footer_title'>CONTACTO</h3>
                 <h2> Celso Torres Contratista</h2>
                 <p> GBA sur / C.A.B.A.</p>
-                <p> Tel.: +54 9 11 0000 0000</p>
-                <p> Email: </p>
+                <p><a href="https://wa.me/+5491178310579" target="blank" className="colorBlanco"> Tel.: +54 9 11 7831 0579</a></p>
+                <p><a href="mailto:celsodamiansolis@gmil.com" target="blank" className="colorBlanco">Email.: celsodamiansolis@gmail.com</a> </p>
 
             </div>
 
