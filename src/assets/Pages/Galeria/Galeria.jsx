@@ -4,7 +4,7 @@ function Galeria(){
     return(
         <>
         <div className="containerGaleria">
-            
+
         </div>
         </>
     )
