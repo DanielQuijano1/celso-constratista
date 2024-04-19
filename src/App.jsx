@@ -5,42 +5,23 @@ import Nosotros from './assets/Main/Nosotros/Nosotros.jsx';
 import Header from './assets/Header/Header.jsx';
 import Footer from './assets/Footer/Footer.jsx';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Galeria from './assets/Pages/Galeria/Galeria.jsx';
 
 function App() {
 
   return (
     <div className='app'>
 
-    
-      {/*  header  */}
-
-      <header>
-
-        <Header />
-
-      </header>
-
-      {/*  main  */}
-
-      <main>
-
-        <CarouselMain />
-
-        <Nosotros />
-
-        <Servicios />
-
-      </main>
-
-      {/*  footer  */}
-
-      <footer>
-
+      <BrowserRouter>
+      <Header />
+        <Routes>
+          <Route path="/" element={[<CarouselMain /> , <Nosotros /> , <Servicios />, ] } />
+          <Route path="/galeria/" element={[ <Galeria/>] }/>
+        </Routes>
         <Footer />
-
-      </footer>
-
-      <SocialMenu className="zindex1000"/>
+      </BrowserRouter>
+      <SocialMenu className="zindex1000" />
     </div>
   )
 }

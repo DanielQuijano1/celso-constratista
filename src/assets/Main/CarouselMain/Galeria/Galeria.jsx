@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./../../../../App.css"
 
 function Galeria(){
@@ -5,9 +6,9 @@ function Galeria(){
         <>
         
         <button className="galeria_button">
-            <a href="" className="galeria_button_link">
+            <NavLink to="/galeria" className="galeria_button_link">
                 Ver Galeria
-            </a>
+            </NavLink>
         </button>
         
         </>
