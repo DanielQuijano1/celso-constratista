@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='app'>
 
-
+    <SocialMenu className="zindex1000"/>
       {/*  header  */}
 
       <header>

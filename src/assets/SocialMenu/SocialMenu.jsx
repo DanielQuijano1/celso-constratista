@@ -11,15 +11,10 @@ const SocialMenu = () => {
 
     return (
         <div className={`social-media-menu ${isOpen ? 'open' : ''}`}>
-            <button className="toggle-button" onClick={toggleMenu}>
-                <span className="arrow-icon"></span>
-            </button>
-            <ul className="social-icons">
-                {/* Agrega tus íconos de redes sociales aquí */}
-                <li><a href="#"><img src="facebook-icon.png" alt="Facebook" /></a></li>
-                <li><a href="#"><img src="twitter-icon.png" alt="Twitter" /></a></li>
-                {/* ...otros íconos... */}
-            </ul>
+
+            <div className="popup__box">
+                <a href="https://wa.me/+5491178310579" target="blank"><div className="popup__icon whatsapp animacionActive " /></a>
+            </div>
         </div>
     );
 };
