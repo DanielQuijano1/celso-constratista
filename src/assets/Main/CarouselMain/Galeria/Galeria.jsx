@@ -7,7 +7,7 @@ function Galeria(){
         
         <button className="galeria_button">
             <NavLink to="/galeria" className="galeria_button_link">
-                Ver Galeria
+                Ver Proyectos
             </NavLink>
         </button>
         

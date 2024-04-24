@@ -7,6 +7,7 @@ import Footer from './assets/Footer/Footer.jsx';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Galeria from './assets/Pages/Galeria/Galeria.jsx';
+import FotosGaleria  from './assets/Pages/Galeria/FotosGaleria/FotosGaleria.jsx';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={[<CarouselMain /> , <Nosotros /> , <Servicios />, ] } />
           <Route path="/galeria/" element={[ <Galeria/>] }/>
+          <Route path='/bernal-sargento-cabral/'  element={<FotosGaleria />}/>
         </Routes>
         <Footer />
       </BrowserRouter>
