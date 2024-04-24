@@ -1,3 +1,6 @@
+
+import Carousel from 'react-bootstrap/Carousel';
+
 import "./../../../App.css"
 
 function Servicios() {
@@ -17,15 +20,57 @@ function Servicios() {
                 <h2 className="servicios_title">Nuestros Servicios</h2>
                 <p>Ofrecemos una amplia gama de servicios de construcción para satisfacer las necesidades de nuestros clientes. Algunos de nuestros servicios incluyen: </p>
 
-                <div className="servicos_container">
-                    <p className="service"> <strong>Plomería</strong> <br/> Instalación y reparación de sistemas de fontanería.</p>
-                    <p className="service"> <strong>Durlok</strong> <br/> Trabajos de tabiquería y cielorrasos en durlock.</p>
-                    <p className="service"> <strong>Pintura</strong> <br/> Pintura interior y exterior.</p>
-                    <p className="service"> <strong>Losas y Viguetas</strong> <br/> Construcción de losas y viguetas.</p>
-                    <p className="service"> <strong>Pisos</strong> <br/> Instalación de pisos de diversos materiales.</p>
-                    <p className="service"> <strong>Techos</strong> <br/> Tanto techos de material como de chapa.</p>
-                    <p className="service"> <strong>Electricidad</strong> <br/> Instalación y reparación de sistemas eléctricos.</p>
-                    <p className="service"> <strong>Demolición</strong> <br/> Servicios de demolición seguros y eficientes.</p>
+                <div className="zindex1">
+                    <Carousel fade indicatorLabels={["btn1", "btn2", "btn3", "btn4", "btn5", "btn6", "btn7", "btn8" ]} > 
+                        <Carousel.Item interval={3000} className="imgCarruselServicios">
+                            <Carousel.Caption interval={3000} text="plomeria" >
+                                <h3 className='tituloServicios'>Plomería</h3>
+                                <p className='textoServicios'>Instalación y reparación de sistemas de fontanería.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item interval={3000} className="imgCarruselServicios">
+                            <Carousel.Caption interval={3000}>
+                                <h3 className='tituloServicios'>Durlok</h3>
+                                <p className='textoServicios'>Trabajos de tabiquería y cielorrasos en durlock.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item interval={3000} className="imgCarruselServicios">
+                            <Carousel.Caption interval={3000}>
+                                <h3 className='tituloServicios'>Pintura</h3>
+                                <p className='textoServicios'>Pintura interior y exterior.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item interval={3000} className="imgCarruselServicios">
+                            <Carousel.Caption >
+                                <h3 className='tituloServicios'>Losas y Viguetas</h3>
+                                <p className='textoServicios'>Construcción de losas y viguetas.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item interval={3000} className="imgCarruselServicios">
+                            <Carousel.Caption >
+                                <h3 className='tituloServicios'>Pisos</h3>
+                                <p className='textoServicios'>Instalación de pisos de diversos materiales.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item interval={3000} className="imgCarruselServicios">
+                            <Carousel.Caption >
+                                <h3 className='tituloServicios'>Techos</h3>
+                                <p className='textoServicios'>Tanto techos de material como de chapa.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item interval={3000} className="imgCarruselServicios">
+                            <Carousel.Caption >
+                                <h3 className='tituloServicios'>Electricidad</h3>
+                                <p className='textoServicios'>Instalación y reparación de sistemas eléctricos.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item interval={3000} className="imgCarruselServicios">
+                            <Carousel.Caption >
+                                <h3 className='tituloServicios'>Demolición</h3>
+                                <p className='textoServicios'>Servicios de demolición seguros y eficientes.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
                 </div>
             </div>
         </>

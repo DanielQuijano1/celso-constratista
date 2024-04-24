@@ -5,8 +5,26 @@ function Footer() {
         <>
 
             <div className="box_container_footer">
-                
-                <div className="marginBottom1em">
+
+                <h3 className='footer_title'>CONTACTO</h3>
+                <h2> Celso Torres Contratista</h2>
+                <p> GBA sur / C.A.B.A.</p>
+                <p><a href="https://wa.me/+5491178310579" target="blank" className="colorBlanco"> Tel.: +54 9 11 7831 0579</a></p>
+                <p><a href="mailto:celsodamiansolis@gmail.com" target="blank" className="colorBlanco">Email.: celsodamiansolis@gmail.com</a> </p>
+
+            </div>
+
+            <p className="footer_text_image">Las imágenes son propiedad de Celso Torres Contratista</p>
+
+        </>
+    )
+}
+
+export default Footer;
+
+/*
+
+<div className="marginBottom1em">
                     <h3 className='footer_title'>SOBRE NOSOTROS</h3>
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill espaciado1remLeft" viewBox="0 0 16 16">
@@ -24,19 +42,5 @@ function Footer() {
                         </svg>
                         Contactanos </p>
                 </div>
-
-                <h3 className='footer_title'>CONTACTO</h3>
-                <h2> Celso Torres Contratista</h2>
-                <p> GBA sur / C.A.B.A.</p>
-                <p><a href="https://wa.me/+5491178310579" target="blank" className="colorBlanco"> Tel.: +54 9 11 7831 0579</a></p>
-                <p><a href="mailto:celsodamiansolis@gmail.com" target="blank" className="colorBlanco">Email.: celsodamiansolis@gmail.com</a> </p>
-
-            </div>
-
-            <p className="footer_text_image">Las imágenes son propiedad de Celso Torres Contratista</p>
-
-        </>
-    )
-}
-
-export default Footer;
+                
+                */
