@@ -25,7 +25,8 @@ function FotosGaleria() {
                 <img src="./Imagen de WhatsApp 2024-04-01 a las 00.19.56_9641dfb8.jpg" className="galeria__link brightness" />
                 <img src="./Imagen de WhatsApp 2024-04-01 a las 00.21.49_3a91d417.jpg" className="galeria__link brightness" />
                 <img src="./Imagen de WhatsApp 2024-04-19 a las 10.09.45_63017375.jpg" className="galeria__link brightness" />
-                
+                <img src="./baño_sonia_1.jpg" className="galeria__link brightness" />
+                <img src="./baño_sonnia_2.jpg" className="galeria__link brightness" />
             </div>
         </>
     )
