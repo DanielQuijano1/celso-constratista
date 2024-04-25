@@ -53,6 +53,9 @@
   background-color: var(--principalColor);
 }
 
+
+
+
 .espaciado1remLeft {
   margin-right: 1rem;
 }
@@ -264,7 +267,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  /*
   background-image: url("/public/Imagen de WhatsApp 2024-04-01 a las 00.19.23_257afb3b.jpg");
+  */
+  background-image: url("/public/Imagen de WhatsApp 2024-04-19 a las 10.02.25_d7786bee.jpg");
   position: relative;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
@@ -642,4 +648,39 @@
   border-radius: 10px;
   height: 10px;
   margin: 0px 6px;
+}
+
+
+
+/*  ------------------------------------------- 
+
+              media queries
+
+---------------------------------------------
+*/
+
+@media screen and (min-width: 800px) {
+  .appPC{
+    width: 100vw;
+    display: flex;
+    place-content: center;
+    background-color: var(--principalColor);
+  }
+
+  .box_head_redes{
+    width: 100vw;
+    position:absolute;
+    right: 0px;
+
+  }
+
+  .box_head{
+    margin-top: 100px;
+  }
+
+  .galeria__link{
+    max-height: 500px;
+    max-width: fit-content;
+  }
+
 }
