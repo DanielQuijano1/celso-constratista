@@ -657,27 +657,99 @@
 */
 
 @media screen and (min-width: 800px) {
-  .appPC{
+  .appPC {
     width: 100vw;
     display: flex;
     place-content: center;
     background-color: var(--principalColor);
   }
 
-  .box_head_redes{
+  .box_head_redes {
     width: 100vw;
-    position:absolute;
+    position: absolute;
     right: 0px;
 
   }
 
-  .box_head{
+  .box_head {
     margin-top: 100px;
   }
 
-  .galeria__link{
+  .galeria__link {
     max-height: 500px;
     max-width: fit-content;
   }
 
+}
+
+
+/* Estilos para el botón toggle */
+.social-media-button {
+  position: sticky;
+  display: inline-block;
+  left: 85%;
+  bottom: 8%;
+}
+
+.toggle-button {
+  background-color: #3d3d3dbd;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50px;
+  height: 50px;
+}
+
+.toggle-button.open {
+  background-color: #3d3d3d;
+
+  z-index: 1000;
+
+}
+
+/* Estilos para el menú de redes sociales */
+.social-media-menu {
+  position: absolute;
+  top: -140px;
+  /* Ajusta la posición vertical del menú */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #575757d0;
+  border-radius: 20px;
+  padding: 23px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  padding-bottom: 35px;
+}
+
+
+.social-media-menu .social-icon {
+  border-radius: 50%;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-media-menu .social-icon {
+  color: #020202;
+  transition: color 0.3s ease;
+  z-index: 100;
+  position: relative;
+  left: -25px;
+  width: 25px;
+  height: 25px;
+}
+
+.social-media-menu .social-icon:hover {
+  color: #e74c3c;
+  z-index: 100;
+
+}
+
+.dotsMenu {
+  width: 60px;
+  height: 60px;
 }

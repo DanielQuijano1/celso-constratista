@@ -18,7 +18,7 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/" element={[<CarouselMain />, <Nosotros />, <Servicios />,]} />
+            <Route path="/" element={[<CarouselMain />, <Nosotros />, <Servicios />, ]} />
             <Route path="/galeria/" element={[<Galeria />]} />
             <Route path='/bernal-sargento-cabral/' element={<FotosGaleria />} />
           </Routes>

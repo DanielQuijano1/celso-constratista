@@ -1,8 +1,11 @@
-import React from 'react';
-import { useState } from 'react';
 import "./../../App.css"
+import React, { useState } from 'react';
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { SocialIcon } from 'react-social-icons';
 
-const SocialMenu = () => {
+
+
+const SocialMediaButton = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -10,14 +13,21 @@ const SocialMenu = () => {
     };
 
     return (
-        <div className={`social-media-menu ${isOpen ? 'open' : ''}`}>
-
-            <div className="popup__box">
-                <a href="https://wa.me/+5491178310579" target="blank"><div className="popup__icon whatsapp animacionActive " /></a>
-            </div>
+        <div className="social-media-button">
+            <button className={`toggle-button ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <BsThreeDotsVertical className="dotsMenu"/>
+            </button>
+            {isOpen && (
+                <div className="social-media-menu">
+                    <SocialIcon url="https://www.facebook.com" />
+                    <SocialIcon url="https://www.instagram.com/celsodamiansolis/" />
+                    
+                    <SocialIcon url="https://api.whatsapp.com/+5491178310579" />
+                    
+                </div>
+            )}
         </div>
     );
 };
 
-
-export default SocialMenu;
+export default SocialMediaButton;
