@@ -698,8 +698,8 @@
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 .toggle-button.open {
@@ -712,7 +712,7 @@
 /* Estilos para el menú de redes sociales */
 .social-media-menu {
   position: absolute;
-  top: -140px;
+  top: -200px;
   /* Ajusta la posición vertical del menú */
   left: 50%;
   transform: translateX(-50%);
@@ -720,8 +720,8 @@
   flex-direction: column;
   gap: 10px;
   background-color: #575757d0;
-  border-radius: 20px;
-  padding: 23px;
+  border-radius: 30px;
+  padding: 28px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: -1;
   padding-bottom: 35px;
@@ -730,17 +730,15 @@
 
 .social-media-menu .social-icon {
   border-radius: 50%;
+  position: relative;
 }
 
 /* Estilos para los íconos de redes sociales */
 .social-media-menu .social-icon {
   color: #020202;
-  transition: color 0.3s ease;
   z-index: 100;
   position: relative;
-  left: -25px;
-  width: 25px;
-  height: 25px;
+  left: -23px;
 }
 
 .social-media-menu .social-icon:hover {

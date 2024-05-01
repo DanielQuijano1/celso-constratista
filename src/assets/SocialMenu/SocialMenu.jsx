@@ -19,10 +19,9 @@ const SocialMediaButton = () => {
             </button>
             {isOpen && (
                 <div className="social-media-menu">
-                    <SocialIcon url="https://www.facebook.com" />
-                    <SocialIcon url="https://www.instagram.com/celsodamiansolis/" />
-                    
-                    <SocialIcon url="https://api.whatsapp.com/+5491178310579" />
+                    <a href="https://www.facebook.com" target="blank" className="social-icon"><div className="popup__icon facebook animacionActive "/></a>
+                    <a href="https://www.instagram.com/celsodamiansolis/" target="blank" className="social-icon"><div className="popup__icon instagram animacionActive "/></a>
+                    <a href="https://wa.me/+5491178310579" target="blank" className="social-icon"><div className="popup__icon whatsapp animacionActive "/></a>
                     
                 </div>
             )}
