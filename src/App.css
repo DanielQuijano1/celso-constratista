@@ -687,7 +687,7 @@
 .social-media-button {
   position: sticky;
   display: inline-block;
-  left: 85%;
+  left: 80%;
   bottom: 8%;
 }
 
@@ -714,23 +714,51 @@
   position: absolute;
   top: -200px;
   /* Ajusta la posición vertical del menú */
-  left: 50%;
+  left:5%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   gap: 10px;
   background-color: #575757d0;
   border-radius: 30px;
-  padding: 28px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 27px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .6);
   z-index: -1;
   padding-bottom: 35px;
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(150px);
+    transform: translateY(150px);
+    height: 0px;
+  }
 
-.social-media-menu .social-icon {
-  border-radius: 50%;
-  position: relative;
+  100% {
+    -webkit-transform: translateY(0.8s);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(150px);
+    transform: translateY(150px);
+    opacity: 0;
+  }
+
+  55%{
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 /* Estilos para los íconos de redes sociales */
@@ -738,7 +766,21 @@
   color: #020202;
   z-index: 100;
   position: relative;
-  left: -23px;
+  left: -22px;
+  border-radius: 50%;
+  position: relative;
+  animation: slider 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slider {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    height: max-content;
+  }
 }
 
 .social-media-menu .social-icon:hover {
@@ -750,4 +792,9 @@
 .dotsMenu {
   width: 60px;
   height: 60px;
+}
+
+.dotsMenu:active {
+  scale: 1.1;
+  transition: .5s;
 }
