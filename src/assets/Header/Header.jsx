@@ -1,4 +1,5 @@
 import "./../../App.css"
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -14,28 +15,29 @@ function Header() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope colorPrimario espaciado1remLeft" viewBox="0 0 16 16">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                     </svg>
-                    <a href="mailto:celsodamiansolis@gmail.com" target="blank" className="colorBlanco">Email.: celsodamiansolis@gmail.com</a> 
+                    <a href="mailto:celsodamiansolis@gmail.com" target="blank" className="colorBlanco">Email.: celsodamiansolis@gmail.com</a>
                 </div>
             </div>
+            <Link to="/">
+                <div className="box_head">
 
-            <div className="box_head">
+                    <div className="box_logo">
 
-                <div className="box_logo">
-
-                    <div className="logo">
-                        <div className="logo_name">
-                            <div>C</div>
-                            <div>T</div>
+                        <div className="logo">
+                            <div className="logo_name">
+                                <div>C</div>
+                                <div>T</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className='logo_title'>
-                        Celso Torres <br /> Contratista
+                        <div className='logo_title'>
+                            Celso Torres <br /> Contratista
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
+            </Link >
         </>
 
     )
