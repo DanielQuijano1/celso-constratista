@@ -689,6 +689,7 @@
   display: inline-block;
   left: 80%;
   bottom: 8%;
+  z-index: 1000 !important;
 }
 
 .toggle-button {
