@@ -17,6 +17,7 @@ function App() {
 
         <BrowserRouter>
           <Header />
+          <SocialMenu className="zindex1000" />
           <Routes>
             <Route path="/" element={[<CarouselMain />, <Nosotros />, <Servicios />, ]} />
             <Route path="/galeria/" element={[<Galeria />]} />
@@ -24,7 +25,7 @@ function App() {
           </Routes>
           <Footer />
         </BrowserRouter>
-        <SocialMenu className="zindex1000" />
+        
       </div>
     </div>
   )
