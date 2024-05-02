@@ -685,7 +685,7 @@
 
 /* Estilos para el botón toggle */
 .social-media-button {
-  position: sticky;
+  position:fixed;
   display: inline-block;
   left: 80%;
   bottom: 8%;
